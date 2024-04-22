@@ -10,8 +10,8 @@
     },
     {
         "id": 2,
-        "name": "PAN DE AJO",
-        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "name": "PAN DE AJO MOZZARELLA",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/panapp_1702567416_medium.webp",
         "description": "Pan de ajo con queso 100% mozzarella + auténtica salsa de ajo.",
         "category": 1,
         "price": 4.99,
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "BRIE BITES",
-        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/brie_bites_icono_1702973736_medium.webp",
         "description": "Crujientes triángulos rebozados rellenos de cremoso queso con brie",
         "category": 1,
         "price": 4.99,
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name": "PALITOS CON SALSA PARMESANO",
-        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/palitos_1707807892_medium.webp",
         "description": "Palitos de pan bañados en salsa de queso parmesano + salsa. 8 uds",
         "category": 1,
         "price": 4.49,
@@ -38,192 +38,289 @@
     {
         "id": 5,
         "name": "Patatas Teja",
-        "image": "",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/patatas_teja_1707807915_medium.webp",
         "description": "Crujientes patatas teja recién horneadas + salsa",
         "category": 1,
-        "price": 2.99
+        "price": 2.99,
+        "quantity": 1
     },
     {
         "id": 6,
         "name": "Aros de Cebolla",
-        "image": "",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/aros_de_cebolla_1707808144_medium.webp",
         "description": "Crujientes aros de cebolla fresca rebozados. 10 uds",
         "category": 1,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
         "id": 7,
         "name": "Pechuguitas de Pollo",
-        "image": "",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/pechuguitas_xxl_1707808131_medium.webp",
         "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
         "category": 1,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
         "id": 8,
         "name": "Green Nuggets",
-        "image": "",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/green_nuggets_1707808192_medium.webp",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
-        "category": 2,
-        "price": 4.99
+        "category": 1,
+        "price": 4.99,
+        "quantity": 1
     },
     {
         "id": 9,
-        "name": "Green Nuggets",
-        "image": "",
-        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
-        "category": 2,
-        "price": 4.99
+        "name": "Combo Entrantes",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/combo_1707808086_medium.webp",
+        "description": "Crujientes aros de cebolla (x4), Sabrosas alitas de pollo (x4), Pechuguitas de pollo (X4) + ½ ración de patatas teja",
+        "category": 1,
+        "price": 6.99,
+        "quantity": 1
     },
     {
         "id": 10,
+        "name": "C",
+        "image": "",
+        "description": "",
+        "category": 2,
+        "price": 6.99,
+        "quantity": 1
+    },
+    {
+        "id": 11,
         "name": "Green Nuggets",
         "image": "",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
         "category": 2,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 12,
         "name": "Green Nuggets",
         "image": "",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
         "category": 2,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 13,
         "name": "Green Nuggets",
         "image": "",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
         "category": 2,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 14,
         "name": "Green Nuggets",
         "image": "",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
         "category": 2,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 15,
         "name": "Green Nuggets",
         "image": "",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
         "category": 2,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
-        "name": "Green Nuggets",
-        "image": "",
-        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
-        "category": 2,
-        "price": 4.99
-    },
-    {
+        "id": 16,
         "name": "MEGA CHOCO COOKIE",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/mega_choco_cookie_320x320px_1708686069_medium.webp",
+        "description": " Deliciosa cookie rellena de chocolate en colaboración con The Cookie Lab.",
         "category": 3,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 17,
         "name": "ROLLS DE CANELA",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
-        "category": 3,
-        "price": 4.99
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/papa_rolls_canela_320x320px_1708685759_medium.webp",
+        "description": "Papa Rolls de Canela",
+        "category": 2,
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 18,
         "name": "CORNETO NOCILLA",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
-        "category": 3,
-        "price": 4.99
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/magnun_almendrado_320x320px_1708686001_medium.webp",
+        "description": "Cornetto Nocilla",
+        "category": 2,
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 19,
         "name": "MAGUM ALMENDRA",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/magnum_almendrado_320x320_feb24_1709022666_medium.webp",
+        "description": "Helado de vainilla con crujiente capa de chocolate y trocitos de almendras.",
         "category": 3,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 20,
         "name": "MAGNUM WHITE",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/magnun_white_320x320px_1708685811_medium.webp",
+        "description": "Helado de vainilla cubierto con una capa de chocolate blanco.",
         "category": 3,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 21,
         "name": "CHUNKY MONKEY 500ml",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_cookie_dough_465_320x320px_1708685783_medium.webp",
+        "description": "Helado de plátano con trozos chocolateados y nueces. ",
         "category": 3,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 22,
         "name": "CHOCO FUDGE BROWNIE 500ml",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_choco_fudge_465_320x320px_1708685770_medium.webp",
+        "description": "Helado de chocoalte con bizcocho de chocolate.",
         "category": 3,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 23,
         "name": "COOKIE DOUGH 500ml",
-        "image": "",
-        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_cookie_dough_465_320x320px_1708685725_medium.webp",
+        "description": "Helado de vainilla con cookies y trocitos de chocolate. ",
         "category": 3,
         "price": 4.99,
         "quantity": 1
     },
     {
+        "id": 24,
         "name": "Coca Cola 33cl",
-        "image": "",
-        "category": 4,
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/cocacola_320x320px_1708685454_medium.webp",
+        "description": "",
+        "category": 3,
         "price": 4.99,
         "quantity": 1
     },
     {
+        "id": 25,
         "name": "Fanta Naranja 33cl",
+        "description": "",
         "image": "",
-        "category": 4,
+        "category": 3,
         "price": 4.99,
         "quantity": 1
     },
     {
+        "id": 26,
         "name": "Fanta Limón 33cl",
+        "description": "",
+        "image": "",
+        "category": 3,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 27,
+        "name": "Botella Agua 50cl",
+        "description": "",
+        "image": "",
+        "category": 3,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 28,
+        "name": "Coca Cola Zero 33cl",
+        "description": "",
         "image": "",
         "category": 4,
         "price": 4.99,
         "quantity": 1
     },
     {
-        "name": "Botella Agua 50cl",
-        "image": "",
-        "category": 4,
-        "price": 4.99
-    },
-    {
-        "name": "Coca Cola Zero 33cl",
-        "image": "",
-        "category": 4,
-        "price": 4.99
-    },
-    {
+        "id": 29,
         "name": "Coca Cola Light 33cl",
+        "description": "",
         "image": "",
         "category": 4,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 30,
         "name": "Aquarius Naranja 33cl",
+        "description": "",
         "image": "",
         "category": 4,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
     },
     {
+        "id": 31,
         "name": "Aquarius Limon 33cl",
+        "description": "",
         "image": "",
         "category": 4,
-        "price": 4.99
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 32,
+        "name": "Aquarius Limon 33cl",
+        "description": "",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 33,
+        "name": "Aquarius Limon 33cl",
+        "description": "",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 34,
+        "name": "Aquarius Limon 33cl",
+        "description": "",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 35,
+        "name": "Aquarius Limon 33cl",
+        "description": "",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 36,
+        "name": "Aquarius Limon 33cl",
+        "description": "",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
     }
 ]

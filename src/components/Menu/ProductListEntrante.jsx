@@ -15,7 +15,7 @@ const ProductListEntrante = () => {
                 <Row gutter={16}>
                     {ProductItems.filter(product => product.category === 1).map((product) => (
                         <Col span={8} key={product.id}>
-                            <CardProductEntrante name={product.name} description={product.description} price={product.price} onAddToCart={addToCart}  />
+                            <CardProductEntrante name={product.name} image={product.image} description={product.description} price={product.price} onAddToCart={addToCart}  />
                         </Col>
                     ))}
                 </Row>

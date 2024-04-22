@@ -1,18 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {AddToCartIcon} from '../Cart/Icons.jsx'
 import { Card, Button } from 'antd';
 
-const CardProductEntrante = ({ key, name, description, price, quantity, onAddToCart }) => {
+const CardProductEntrante = ({ key, name, image, description, price, quantity, onAddToCart }) => {
   const handleAddToCart = () => {
-    onAddToCart({ key, name, description, price, quantity 
+    onAddToCart({ key, name,image, description, price, quantity 
   });
 };
 
 return (
   <Card type="inner" title={name} key={key} style={{ marginBottom: 16, width: 300 }}>
-    <p>{description}</p>
-    <p>Precio: ${price}</p>
-    <Button type="primary" onClick={handleAddToCart}>Añadir al carrito</Button>
+    <div>
+      <img style={{width : '250px', height: '200px', textaling: "center"}} src={image} alt={name} />
+      <p>{description}</p>
+    </div>
+    <div style={{float: "left"}}>
+      {price}€
+    </div>
+    <div style={{float: "right"}}>
+      <Button onClick={handleAddToCart}><AddToCartIcon/></Button>
+    </div>
   </Card>
 );
 };
@@ -20,9 +28,10 @@ return (
 CardProductEntrante.propTypes = {
   key:PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  quantity: PropTypes.number.isRequired,
+  quantity: PropTypes.number,
   onAddToCart: PropTypes.func.isRequired,
 };
 
