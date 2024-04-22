@@ -1,0 +1,229 @@
+[
+    {
+        "id": 1,
+        "name": "ALITAS BBQ",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "description": "Alitas de pollo bañadas en nuestra insuperable salsa BBQ original. 8 uds",
+        "category": 1,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 2,
+        "name": "PAN DE AJO",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "description": "Pan de ajo con queso 100% mozzarella + auténtica salsa de ajo.",
+        "category": 1,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 3,
+        "name": "BRIE BITES",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "description": "Crujientes triángulos rebozados rellenos de cremoso queso con brie",
+        "category": 1,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "name": "PALITOS CON SALSA PARMESANO",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "description": "Palitos de pan bañados en salsa de queso parmesano + salsa. 8 uds",
+        "category": 1,
+        "price": 4.49,
+        "quantity": 1
+    },
+    {
+        "id": 5,
+        "name": "Patatas Teja",
+        "image": "",
+        "description": "Crujientes patatas teja recién horneadas + salsa",
+        "category": 1,
+        "price": 2.99
+    },
+    {
+        "id": 6,
+        "name": "Aros de Cebolla",
+        "image": "",
+        "description": "Crujientes aros de cebolla fresca rebozados. 10 uds",
+        "category": 1,
+        "price": 4.99
+    },
+    {
+        "id": 7,
+        "name": "Pechuguitas de Pollo",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 1,
+        "price": 4.99
+    },
+    {
+        "id": 8,
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "id": 9,
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "id": 10,
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "name": "Green Nuggets",
+        "image": "",
+        "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
+        "category": 2,
+        "price": 4.99
+    },
+    {
+        "name": "MEGA CHOCO COOKIE",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "ROLLS DE CANELA",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "CORNETO NOCILLA",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "MAGUM ALMENDRA",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "MAGNUM WHITE",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "CHUNKY MONKEY 500ml",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "CHOCO FUDGE BROWNIE 500ml",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99
+    },
+    {
+        "name": "COOKIE DOUGH 500ml",
+        "image": "",
+        "description": " Trocitos de pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "category": 3,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "name": "Coca Cola 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "name": "Fanta Naranja 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "name": "Fanta Limón 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99,
+        "quantity": 1
+    },
+    {
+        "name": "Botella Agua 50cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99
+    },
+    {
+        "name": "Coca Cola Zero 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99
+    },
+    {
+        "name": "Coca Cola Light 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99
+    },
+    {
+        "name": "Aquarius Naranja 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99
+    },
+    {
+        "name": "Aquarius Limon 33cl",
+        "image": "",
+        "category": 4,
+        "price": 4.99
+    }
+]
