@@ -8,12 +8,12 @@ function App() {
     <Layout>
       <BrowserRouter>
           <Routes>
-            {routesgustoexpress.map((route) => (
-              <Route key={route.id} {...route} />
+            {routesgustoexpress.map((route, index) => (
+              <Route key={index} {...route} />
             ))}
           </Routes>
       </BrowserRouter>
-    </Layout>
+    </Layout> 
   );
 }
 

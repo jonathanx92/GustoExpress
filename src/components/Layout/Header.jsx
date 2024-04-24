@@ -15,7 +15,7 @@ const AppHeader = () => {
       <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', width: '100%' }}>
         <a href="./login">Login</a>
         <div style={{ fontSize: '24px', marginLeft: '20px' }}>
-          <a href="./shopping-cart"><ShoppingCartOutlined /></a>
+          <a href="./carrito"><ShoppingCartOutlined /></a>
         </div>
       </div>
     </Header>
