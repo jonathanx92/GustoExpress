@@ -12,7 +12,7 @@ const CardProductEntrante = ({ key, name, image, description, price, quantity, o
 return (
   <Card type="inner" title={name} key={key} style={{ marginBottom: 16, width: 300 }}>
     <div>
-      <img style={{width : '250px', height: '200px', textaling: "center"}} src={image} alt={name} />
+      <img style={{width : '200px', height: '200px', textAling: "center"}} src={image} alt={name} />
       <p>{description}</p>
     </div>
     <div style={{float: "left"}}>
@@ -26,13 +26,13 @@ return (
 };
 
 CardProductEntrante.propTypes = {
-  key:PropTypes.number.isRequired,
+  key:PropTypes.number,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   quantity: PropTypes.number,
-  onAddToCart: PropTypes.func.isRequired,
+  onAddToCart: PropTypes.func.isRequired
 };
 
 export default CardProductEntrante;

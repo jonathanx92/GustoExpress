@@ -25,30 +25,34 @@ const FormContact = () => (
     {...layout}
     name="contact-messages"
     onFinish={onFinish}
-    style={{
-      maxWidth: 600,
-    }}
+    style={{ maxWidth: 600 }}
     validateMessages={validateMessages}
   >
     <Form.Item
       name={['user', 'name']}
       label="Nombre"
       rules={[
-        {
-          required: true,
-        },
+        { required: true }
       ]}
     >
       <Input/>
     </Form.Item>
+
+    <Form.Item
+      name={['user', 'surnames']}
+      label="Apellidos"
+      rules={[
+        {required: true}
+      ]}
+    >
+      <Input/>
+    </Form.Item>
+
     <Form.Item
       name={['user', 'email']}
       label="Correo"
       rules={[
-        {
-          type: 'email',
-          required: true
-        },
+        { type: 'email', required: true }
       ]}
     >
       <Input />
@@ -57,6 +61,7 @@ const FormContact = () => (
     <Form.Item name={['user', 'issue']} label="Asunto">
       <Input />
     </Form.Item>
+    
     <Form.Item name={['user', 'message']} label="Mensaje">
       <Input.TextArea />
     </Form.Item>

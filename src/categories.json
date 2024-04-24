@@ -1,6 +1,6 @@
 [
     {
-        "name": "entrantes",
+        "name": "entrante",
         "id" : 1
     },
     {
@@ -8,11 +8,11 @@
         "id" : 2
     },
     {
-        "name": "bebidas",
+        "name": "bebida",
         "id" : 3
     },
     {
-        "name": "postres",
+        "name": "postre",
         "id" : 4
     }
 ]
