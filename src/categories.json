@@ -1,0 +1,18 @@
+[
+    {
+        "name": "entrantes",
+        "id" : 1
+    },
+    {
+        "name": "principal",
+        "id" : 2
+    },
+    {
+        "name": "bebidas",
+        "id" : 3
+    },
+    {
+        "name": "postres",
+        "id" : 4
+    }
+]
