@@ -7,7 +7,6 @@ import ProductListEntrante from '../Menu/ProductListEntrante';
 import ProductListPrincipal from '../Menu/ProductListPrincipal';
 import ProductListBebida from '../Menu/ProductListBebida';
 import ProductListPostre from '../Menu/ProductListPostre';
-import ShoppingCart from '../Cart/ShoppingCart'
 import LegalNotice from '../Pages/LegalNotice';
 import FormContact from '../Pages/formContact'
 
@@ -20,7 +19,6 @@ export const routesgustoexpress = [
   { path: '/principal', element: <ProductListPrincipal /> },
   { path: '/bebidas', element: <ProductListBebida /> },
   { path: '/postres', element: <ProductListPostre /> },
-  { path: '/carrito', element: <ShoppingCart/> },
   { path: '/avisolegal', element: <LegalNotice/> },
   { path: '/contacto', element: <FormContact/> },
 ];

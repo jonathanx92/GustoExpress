@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import {useCart} from '../Cart/CartContext.jsx';
 import CardProductPrincipal from "./CardProductPrincipal"; 
 import ProductItems from "../../products.json";
 import { Card, Row, Col } from 'antd';
 
 const ProductListPrincipal = () => {
-    const [cart, setCart] = useState([]);
+    const {dispatch} = useCart([]);
     
     const addToCart = (product) => {
-        setCart([...cart, product]);
+        dispatch({ type : 'ADD_TO_CART', payload:product});
+ 
+
       };
     return (
         <div>
