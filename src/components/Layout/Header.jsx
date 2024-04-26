@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { ShoppingCartOutlined } from '@ant-design/icons';
 import logo from './gustoexpress.jpeg';
 import '../../App.css';
+import CartDrawer from '../Cart/CartDrawer';
 
 const { Header } = Layout;
 
@@ -15,7 +15,7 @@ const AppHeader = () => {
       <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', width: '100%' }}>
         <a href="./login">Login</a>
         <div style={{ fontSize: '24px', marginLeft: '20px' }}>
-          <a href="./carrito"><ShoppingCartOutlined /></a>
+          <CartDrawer/>
         </div>
       </div>
     </Header>
