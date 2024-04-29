@@ -5,11 +5,23 @@ const CartContext = createContext();
 export const useCart = () => useContext(CartContext);
 
 const cartReducer = (state, action) => {
+    let newItem, existingItem;
     switch(action.type){
         case 'ADD_TO_CART':
-            return [...state, action.payload];
+            newItem = action.payload;
+            existingItem = state.find(item => item.id === newItem.id);
+
+            if(existingItem){
+                return state.map(item => item.id === existingItem.id ? {
+                    ...item,
+                    quantity: item.quantity + newItem.quantity,
+                } : item
+                );
+            } else {
+                return [...state, {...newItem, totalPrice: (newItem.price * newItem.quantity).toFixed(2)}];
+            }
         case 'REMOVE_FROM_CART':
-            return state.filter(item => item.id !== action.payload.id);
+            return state.filter(item => item.id !== action.payload);
         case 'INCREMENT_QUANTITY':
             return state.map(item =>
             item.id === action.payload.id ? {...item, quantity: item.quantity + 1} : item 

@@ -1,9 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import { useCart } from './CartContext.jsx';
+import React, { useState } from "react";
+import { useCart } from '../Context/CartContext.jsx';
 import { Drawer, Button, List, Avatar } from 'antd';
-import { ShoppingCartOutlined, LoadingOutlined } from '@ant-design/icons';
-import './CartDrawer.css'; // Archivo CSS para estilos personalizados
+import { ShoppingCartOutlined, LoadingOutlined, MinusOutlined, PlusOutlined  } from '@ant-design/icons';
+import './CartDrawer.css';
 
 const CartDrawer = () => {
     const { cart, dispatch } = useCart();
@@ -19,6 +18,14 @@ const CartDrawer = () => {
 
     const removeFromCart = (id) => {
         dispatch({ type: 'REMOVE_FROM_CART', payload: id });
+    };
+
+    const incrementQuantity = (id) => {
+        dispatch({ type: 'INCREMENT_QUANTITY', payload: {id} })
+    };
+
+    const decrementQuantity = (id) =>{
+        dispatch({type: 'DECREMENT_QUANTITY', payload : {id}})
     };
 
     const clearCart = () => {
@@ -49,13 +56,18 @@ const CartDrawer = () => {
                 ) : (
                     <List
                         dataSource={cart}
-                        renderItem={item => (
+                        renderItem={(item) => (
                             <List.Item>
                                 <List.Item.Meta
                                     avatar={<Avatar src={item.image} />}
                                     title={item.name}
-                                    description={`Precio: ${item.price} | Cantidad: ${item.quantity}`}
+                                    description={`Precio: ${item.price} €`}
                                 />
+                                <div className="quantity-controls">
+                                    <Button onClick={() =>decrementQuantity(item.id)} icon={<MinusOutlined/>}/>
+                                    <span className="quantity">{item.quantity}</span>
+                                    <Button onClick={() =>incrementQuantity(item.id)} icon={<PlusOutlined/>}/>
+                                </div>
                                 <Button onClick={() => removeFromCart(item.id)}>Eliminar</Button>
                             </List.Item>
                         )}
