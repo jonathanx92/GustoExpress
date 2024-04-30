@@ -9,9 +9,9 @@ const ProductListPrincipal = () => {
     
     const addToCart = (product) => {
         dispatch({ type : 'ADD_TO_CART', payload: product });
- 
 
       };
+      
     return (
         <div>
             <Card title="Principal" style={{ marginBottom: 16, backgroundColor: 'grey' }}>

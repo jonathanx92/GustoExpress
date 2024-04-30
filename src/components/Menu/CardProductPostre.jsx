@@ -2,14 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Button } from 'antd';
 import { AddToCartIcon } from '../Cart/Icons';
+import { useCart } from '../Context/CartContext';
 
-const CardProductPostre = ({key, name, image,description, price, quantity, onAddToCart}) => {
+const CardProductPostre = ({id, name, image,description, price, quantity}) => {
+  const { dispatch } = useCart();
+
   const handleAddToCart = () => {
-    onAddToCart({key, name, image, description, price, quantity, onAddToCart
-    });
-  };
+   dispatch({
+    type: 'ADD_TO_CART',
+    payload: {id, name, image, description, price, quantity}
+   });
+  }
+
 return(
-  <Card type='inner' title={name} key={key} style={{marginBottom: 16, width:300}}>
+  <Card type='inner' title={name} id={id} style={{marginBottom: 16, width:300}}>
     <div>
       <img style={{width: '200px', height: '200px', textAlign: 'center'}} src={image} alt={name}/>
       <p>{description}</p>
@@ -26,7 +32,7 @@ return(
 
 
 CardProductPostre.propTypes = {
-  key: PropTypes.number,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
