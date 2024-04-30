@@ -24,13 +24,22 @@ const CartDrawer = () => {
         dispatch({ type: 'INCREMENT_QUANTITY', payload: {id} })
     };
 
-    const decrementQuantity = (id) =>{
-        dispatch({type: 'DECREMENT_QUANTITY', payload : {id}})
+    const decrementQuantity = (id, quantity) =>{
+        if (quantity === 1){
+            removeFromCart(id);
+        } else { 
+            dispatch({type: 'DECREMENT_QUANTITY', payload : {id}})
+        }
+        
     };
 
-    const clearCart = () => {
-        dispatch({ type: 'CLEAR_CART' });
+    const getTotalPrice = () => {
+        return cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
     };
+
+    const continueShopping = () => {
+        // metodo de pago 
+    }
 
     return (
         <>
@@ -64,8 +73,8 @@ const CartDrawer = () => {
                                     description={`Precio: ${item.price} €`}
                                 />
                                 <div className="quantity-controls">
-                                    <Button onClick={() =>decrementQuantity(item.id)} icon={<MinusOutlined/>}/>
-                                    <span className="quantity">{item.quantity}</span>
+                                    <Button onClick={() =>decrementQuantity(item.id, item.quantity)} icon={<MinusOutlined/>}/>
+                                        <span className="quantity">{item.quantity}</span>
                                     <Button onClick={() =>incrementQuantity(item.id)} icon={<PlusOutlined/>}/>
                                 </div>
                                 <Button onClick={() => removeFromCart(item.id)}>Eliminar</Button>
@@ -73,7 +82,11 @@ const CartDrawer = () => {
                         )}
                     />
                 )}
-                <Button onClick={clearCart}>Vaciar Carrito</Button>
+                { cart.length > 0 && (
+                    <div className="payment-button-container">
+                <Button className="payment-button" onClick={continueShopping} >Continuar con la compra {getTotalPrice()}€</Button>
+                </div>
+                )}
             </Drawer>
         </>
     );

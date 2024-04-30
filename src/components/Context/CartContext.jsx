@@ -12,13 +12,13 @@ const cartReducer = (state, action) => {
             existingItem = state.find(item => item.id === newItem.id);
 
             if(existingItem){
-                return state.map(item => item.id === existingItem.id ? {
+                return state.map(item => item.id === existingItem ? {
                     ...item,
                     quantity: item.quantity + newItem.quantity,
                 } : item
                 );
             } else {
-                return [...state, {...newItem, totalPrice: (newItem.price * newItem.quantity).toFixed(2)}];
+                return [...state, {...newItem}];
             }
         case 'REMOVE_FROM_CART':
             return state.filter(item => item.id !== action.payload);
@@ -30,9 +30,6 @@ const cartReducer = (state, action) => {
             return state.map(item =>
                 item.id === action.payload.id ? {...item, quantity: item.quantity -1} : item
             );
-        case 'CLEAR_CART':
-            return [];
-        
         default:
             return state;
     }
