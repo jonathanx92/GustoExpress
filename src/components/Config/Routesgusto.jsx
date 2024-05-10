@@ -9,6 +9,7 @@ import ProductListBebida from '../Menu/ProductListBebida';
 import ProductListPostre from '../Menu/ProductListPostre';
 import LegalNotice from '../Pages/LegalNotice';
 import FormContact from '../Pages/formContact'
+import HomeLogin from '../Login/HomeLogin';
 
 
 export const routesgustoexpress = [
@@ -21,6 +22,7 @@ export const routesgustoexpress = [
   { path: '/postres', element: <ProductListPostre /> },
   { path: '/avisolegal', element: <LegalNotice/> },
   { path: '/contacto', element: <FormContact/> },
+  { path: '/homelogin', element: <HomeLogin /> },
 ];
 
 

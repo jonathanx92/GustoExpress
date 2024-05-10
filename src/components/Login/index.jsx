@@ -1,11 +1,24 @@
 import React from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
+
 
 const FormLogin = () => {
-  const onFinish = (values) => {
-    console.log('Received values of form: ', values);
+  const navigate = useNavigate();
+  const onFinish = async (values) => {
+    try {
+      const { username, password } = values;
+      const auth = getAuth();
+      await signInWithEmailAndPassword(auth, username, password);
+      console.log('Usuario autenticado con éxito');
+      navigate('/homelogin'); 
+    } catch (error) {
+      console.error('Error al autenticar al usuario:', error);
+    }
   };
+
   return (
     <Form
       name="normal_login"
@@ -46,10 +59,7 @@ const FormLogin = () => {
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>Recordar</Checkbox>
         </Form.Item>
-
-
       </Form.Item>
-
       <Form.Item>
         <Button type="primary" htmlType="submit" className="login-form-button">Entrar</Button>
         <a href="./signup"> Registrate ahora!</a>

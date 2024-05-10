@@ -23,7 +23,7 @@ return(
     <div style={{float: 'left'}}>
       {price} €
     </div>
-    <div style={{flot:'right'}}>
+    <div style={{float:'right'}}>
       <Button onClick={handleAddToCart}><AddToCartIcon/></Button>
     </div>
   </Card>
