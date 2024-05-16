@@ -1,70 +1,59 @@
-import React from 'react';
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input } from 'antd';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import React, { useState } from "react";
+import ImagenProfile from './gustoexpress2.jpeg';
+import FirebaseApp from '../Firebase/FirebaseConfig';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import './Login.css';
 import { useNavigate } from 'react-router-dom';
 
+const auth = getAuth(FirebaseApp);
 
-const FormLogin = () => {
-  const navigate = useNavigate();
-  const onFinish = async (values) => {
-    try {
-      const { username, password } = values;
-      const auth = getAuth();
-      await signInWithEmailAndPassword(auth, username, password);
-      console.log('Usuario autenticado con éxito');
-      navigate('/homelogin'); 
-    } catch (error) {
-      console.error('Error al autenticar al usuario:', error);
-    }
-  };
+const LoginSignupForm = () => {
+    const navigate = useNavigate();
+    const [registrando, setRegistrando] = useState(false);
 
-  return (
-    <Form
-      name="normal_login"
-      className="login-form"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-      style={{ width: 300, height: 400, margin: 'auto', textAlign: 'center', paddingTop: 100 }}
-    >
-      <Form.Item
-        name="username"
-        rules={[
-          {
-            required: true,
-            message: 'Introduzca usuario',
-          },
-        ]}
-      >
-        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
-      </Form.Item>
-      <Form.Item
-        name="password"
-        rules={[
-          {
-            required: true,
-            message: 'Introduzca contraseña ',
-          },
-        ]}
-      >
-        <Input
-          prefix={<LockOutlined className="site-form-item-icon" />}
-          type="password"
-          placeholder="Password"
-        />
-      </Form.Item>
-      <Form.Item>
-        <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>Recordar</Checkbox>
-        </Form.Item>
-      </Form.Item>
-      <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">Entrar</Button>
-        <a href="./signup"> Registrate ahora!</a>
-      </Form.Item>
-    </Form>
-  );
+    const functAuthenticaction = async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.target);
+        const email = formData.get('email');
+        const password = formData.get('password');
+
+        if (registrando) {
+            try {
+                await createUserWithEmailAndPassword(auth, email, password);
+                console.log("Usuario creado con éxito");
+                navigate('/home'); 
+            } catch (error) {
+                console.error("Error al crear el usuario:", error.message);
+                alert("Error al crear el usuario: " + error.message);
+            }
+
+        } else {
+            try {
+                await signInWithEmailAndPassword(auth, email, password);
+                console.log("Usuario autenticado con éxito");
+                navigate('/home'); 
+            } catch (error) {
+                console.error("Error al autenticar al usuario:", error.message);
+                alert("El correo o la contraseña son incorrectos");
+            }
+        }
+    };
+
+    return (
+        <div className="padre">
+            <div className="card card-body shadow-lg">
+                <img src={ImagenProfile} alt="" className="style-profile" />
+                <form onSubmit={functAuthenticaction}>
+                    <input type="text" name="email" className="cajatexto" placeholder="Ingrese Email" />
+                    <input type="password" name="password" className="cajatexto" placeholder="Ingrese Contraseña" />
+                    <button className="btnform">{registrando ? 'Regístrate' : 'Iniciar Sesión'}</button>
+                </form>
+
+                <h4 className="texto">{registrando ? "Si ya tienes cuenta" : "No tienes cuenta"} <button className="btnswitch" onClick={() => setRegistrando(!registrando)}>{registrando ? "Iniciar sesión" : "Regístrate"}</button></h4>
+            </div>
+        </div>
+    );
 };
-export default FormLogin;
+
+export default LoginSignupForm;

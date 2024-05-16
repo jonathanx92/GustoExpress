@@ -12,9 +12,9 @@ const ProductListEntrante = () => {
       };
 
     return (
-        <div>
-            <Card title="Entrante" style={{ marginBottom: 16, backgroundColor: 'grey' }}>
-                <Row gutter={16}>
+        <div id="entrante">
+            <Card title="ENTRANTES" style={{ marginBottom: 16, backgroundColor: 'grey', textAlign:'center'}}>
+                <Row gutter={18}>
                     {ProductItems.filter(product => product.category === 1).map((product) => (
                         <Col span={8} key={product.id}>
                             <CardProductEntrante id={product.id} name={product.name} image={product.image} description={product.description} price={product.price} quantity={product.quantity} onAddToCart={addToCart}  />

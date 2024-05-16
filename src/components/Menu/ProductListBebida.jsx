@@ -11,8 +11,8 @@ const ProductListBebida = () => {
         dispatch({type: 'ADD_TO_CART', payload: product});
       };
     return (
-        <div>
-            <Card title="Bebida" style={{ marginBottom: 16, backgroundColor: 'grey'}}>
+        <div id="bebida">
+            <Card title="Bebida"  style={{ marginBottom: 16, backgroundColor: 'grey', textAlign:'center'}}>
                 <Row gutter={16}>
                     {ProductItems.filter(product => product.category === 3).map((product) => (
                         <Col span={8} key={product.id}>

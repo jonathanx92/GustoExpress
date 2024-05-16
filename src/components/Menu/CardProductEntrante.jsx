@@ -16,10 +16,10 @@ const CardProductEntrante = ({ id, name, image, description, price, quantity }) 
 }
 
 return (
-  <Card type="inner" title={name} id={id} style={{ marginBottom: 16, width: 300 }}>
+  <Card type="inner" title={name} id={id} style={{ marginBottom: '2vh', width: '40vh', height:'55vh' }}>
     <div>
-      <img style={{width : '200px', height: '200px', textAling: "center"}} src={image} alt={name} />
-      <p>{description}</p>
+      <img style={{width : '31vh', height: '31vh', marginBottom:'1vh'}} src={image} alt={name} />
+      <p> {description}</p>
     </div>
     <div style={{float: "left"}}>
       {price}€
