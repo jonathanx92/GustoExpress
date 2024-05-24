@@ -1,53 +1,64 @@
-import React from 'react';
-import {ElementsConsumer, PaymentElement} from '@stripe/react-stripe-js';
-import PropTypes from 'prop-types'; // Import PropTypes
+import React, { useState } from 'react';
+import { PaymentElement, useStripe, useElements, LinkAuthenticationElement } from '@stripe/react-stripe-js';
+import { useNavigate } from 'react-router-dom';
+import './FormCheckout.css';
 
-class CheckoutForm extends React.Component {
-  // Add PropTypes validation
-  static propTypes = {
-    stripe: PropTypes.object.isRequired, // Ensure stripe prop is provided and is an object
-    elements: PropTypes.object.isRequired, // Ensure elements prop is provided and is an object
-  };
+const CheckoutForm = () => {
+    const stripe = useStripe();
+    const elements = useElements();
+    const navigate = useNavigate();
+    const [isLoading, setIsLoading] = useState(false);
+    const [message, setMessage] = useState('');
 
-  handleSubmit = async (event) => {
-    event.preventDefault();
+    const handleSubmit = async (event) => {
+        event.preventDefault();
 
-    const {stripe, elements} = this.props;
+        if (!stripe || !elements) {
+            // Stripe.js has not yet loaded.
+            return;
+        }
 
-    if (!stripe || !elements) {
-      return;
-    }
+        setIsLoading(true);
 
-    const result = await stripe.confirmPayment({
-      elements,
-      confirmParams: {
-        return_url: "https://example.com/order/123/complete",
-      },
-    });
+        const { error } = await stripe.confirmPayment({
+            elements,
+            confirmParams: {
+                // Return URL where Stripe will redirect the user after payment is successful
+                return_url: 'http://localhost:3000/success',
+            },
+        });
 
-    if (result.error) {
-      console.log(result.error.message);
-    } else {
-      // Redirect logic
-    }
-  };
+        if (error) {
+            setMessage(error.message);
+            navigate('/cancel'); // Redirige a /cancel en caso de error
+        } else {
+            setMessage('Payment successful!');
+        }
 
-  render() {
+        setIsLoading(false);
+    };
+
     return (
-      <form onSubmit={this.handleSubmit}>
-        <PaymentElement />
-        <button disabled={!this.props.stripe}>Submit</button>
-      </form>
-    );
-  }
-}
+        <form id="payment-form" onSubmit={handleSubmit}>
+            <LinkAuthenticationElement id="link-authentication-element"
+                // Access the email value like so:
+                // onChange={(event) => {
+                //  setEmail(event.value.email);
+                // }}
+                //
+                // Prefill the email field like so:
+                // options={{defaultValues: {email: 'foo@bar.com'}}}
+            />
+            <PaymentElement id="payment-element" />
+            <button disabled={isLoading || !stripe || !elements} id="submit">
+                <span id="button-text">
+                    {isLoading ? <div className="spinner" id="spinner"></div> : "PAGAR"}
+                </span>
+            </button>
+            {/* Show any error or success messages */}
+            {message && <div id="payment-message">{message}</div>}
+        </form>
+    )
+};
 
-export default function InjectedCheckoutForm() {
-  return (
-    <ElementsConsumer>
-      {({stripe, elements}) => (
-        <CheckoutForm stripe={stripe} elements={elements} />
-      )}
-    </ElementsConsumer>
-  )
-}
+export default CheckoutForm;

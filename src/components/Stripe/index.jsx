@@ -1,21 +1,38 @@
-import React from 'react';
-import {Elements} from '@stripe/react-stripe-js';
-import {loadStripe} from '@stripe/stripe-js';
+import React, { useState, useEffect } from 'react';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 import CheckoutForm from './CheckoutForm';
+import { useCart } from '../Context/CartContext'; 
 
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
-const stripePromise = loadStripe('pk_test_51PIBs3P5j8NatTwEGczbhJKlZq32TZRK9sJPUiO4ZrIibVLBpyDUJcX4AfkiOhwAbkHXBTVVpQe5EHu77slrkLew007EO5InnK');
+const stripePromise = loadStripe('pk_test_51PIRUEHET8gjVcjERxINBBtO1iIRRvILpenjH4nkYYg6AT47H4rL8M4XBYOeDUVBnSS8BeL7pSmUxWoAs6qT233d00U8EdMtcn');
 
 export default function AppStripe() {
-    stripePromise.then((data)=>console.log(data))
-    const options = {
-        clientSecret: 'acct_1PIBnxDILDaEdCfO_secret_sk_test_51PIBs3P5j8NatTwEpm6OVWVTcyVHSP1dfjzMI162GCRb8hypSnz8h9n3z5BKhoEoXyT8oEr7d1udVCdVSvhm3MC10004iW3DPQ', 
-      };
+    const [clientSecret, setClientSecret] = useState('');
+    const { cart } = useCart(); 
 
-  return (
-    <Elements stripe={stripePromise} options={options}>
-      <CheckoutForm />
-    </Elements>
-  );
+    useEffect(() => {
+        fetch('http://localhost:4242/create-payment-intent', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ items: cart }), // Envía el carrito al backend
+        })
+        .then(response => response.json())
+        .then(data => setClientSecret(data.clientSecret))
+        .catch(error => console.error('Error fetching client secret:', error));
+    }, [cart]); 
+    const options = {
+        clientSecret,
+    };
+
+    return (
+        <div>
+            {clientSecret && (
+                <Elements stripe={stripePromise} options={options}>
+                    <CheckoutForm />
+                </Elements>
+            )}
+        </div>
+    );
 }

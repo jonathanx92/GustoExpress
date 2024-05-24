@@ -4,6 +4,8 @@ import Layout from './components/Layout/Index';
 import { CartProvider } from './components/Context/CartContext';
 import { AuthProvider } from './components/Context/AuthContext';
 import { routesgustoexpress } from './components/Config/Routesgusto';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 
 function App() {
   return (

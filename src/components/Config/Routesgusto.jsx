@@ -9,6 +9,8 @@ import ProductListPostre from '../Menu/ProductListPostre';
 import LegalNotice from '../Pages/LegalNotice';
 import FormContact from '../Pages/formContact';
 import AppStripe from '../Stripe/index';
+import Success from "../Pages/Success";
+import Cancel from "../Pages/Cancel";
 
 export const routesgustoexpress = [
   { path: '/', element: <Home /> },
@@ -21,6 +23,8 @@ export const routesgustoexpress = [
   { path: '/avisolegal', element: <LegalNotice/> },
   { path: '/contacto', element: <FormContact/> },
   { path: '/pago', element: <AppStripe/> },
+  { path: '/success', element: <Success/> },
+  { path: '/cancel', element: <Cancel/> },
 ];
 
 

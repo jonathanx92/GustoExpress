@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "prod_Q8lOr9gloef3l2" ,
         "name": "ALITAS BBQ",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
         "description": "Alitas de pollo bañadas en nuestra insuperable salsa BBQ original. 8 uds",
@@ -9,7 +9,7 @@
         "quantity": 1
     },
     {
-        "id": 2,
+        "id": "prod_Q9VUfmqG2O0NiR",
         "name": "PAN DE AJO MOZZARELLA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/panapp_1702567416_medium.webp",
         "description": "Pan de ajo con queso 100% mozzarella + auténtica salsa de ajo.",
@@ -18,7 +18,7 @@
         "quantity": 1
     },
     {
-        "id": 3,
+        "id": "prod_Q9VVQzA55nZNDT",
         "name": "BRIE BITES",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/brie_bites_icono_1702973736_medium.webp",
         "description": "Crujientes triángulos rebozados rellenos de cremoso queso con brie",
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "name": "Patatas Teja",
+        "name": "PATATAS TEJA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/patatas_teja_1707807915_medium.webp",
         "description": "Crujientes patatas teja recién horneadas + salsa",
         "category": 1,
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "name": "Aros de Cebolla",
+        "name": "AROS DE CEBOLLA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/aros_de_cebolla_1707808144_medium.webp",
         "description": "Crujientes aros de cebolla fresca rebozados. 10 uds",
         "category": 1,
@@ -55,7 +55,7 @@
     },
     {
         "id": 7,
-        "name": "Pechuguitas de Pollo",
+        "name": "PECHUGUITAS DE POLLO",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/pechuguitas_xxl_1707808131_medium.webp",
         "description": "Pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
         "category": 1,
@@ -64,7 +64,7 @@
     },
     {
         "id": 8,
-        "name": "Green Nuggets",
+        "name": "GREEN NUGGETS",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/green_nuggets_1707808192_medium.webp",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
         "category": 1,
@@ -73,7 +73,7 @@
     },
     {
         "id": 9,
-        "name": "Combo Entrantes",
+        "name": "COMBO ENTRANTES",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/combo_1707808086_medium.webp",
         "description": "Aros de cebolla (x4), Alitas de pollo (x4), Pechuguitas de pollo (X4) + patatas teja",
         "category": 1,
@@ -109,54 +109,54 @@
     },
     {
         "id": 13,
-        "name": "",
-        "image": "https://www.goiko.com/es/wp-content/uploads/2017/03/Yankee_1200x600px-340x340.png",
-        "description": "",
+        "name": "KEBAB",
+        "image": "https://www.gastronosfera.com/sites/default/files/styles/wide/public/toplist/2023/kebap-fast-food-casa.jpg?itok=MKkhvTtB",
+        "description": "Pan de pita, cordero, pollo o mixto, lechuga, tomate, cebolla y salsa",
         "category": 2,
         "price": 4.99,
         "quantity": 1
     },
     {
         "id": 14,
-        "name": "",
-        "image": "",
-        "description": "",
+        "name": "HAMBURGUESA",
+        "image": "https://estaticos-cdn.prensaiberica.es/clip/cc8e43c6-39b0-44c9-8ec5-67a766f2b662_16-9-discover-aspect-ratio_default_0.webp",
+        "description": "Carne Angus, doble de queso Cheddar, doble de bacón, cebolla al grill y salsa Cheat.",
         "category": 2,
-        "price": 4.99,
+        "price": 11.99,
         "quantity": 1
     },
     {
         "id": 15,
-        "name": "",
-        "image": "",
-        "description": "",
+        "name": "HAMBURGUESA DE POLLO",
+        "image": "https://www.foodretail.es/2022/10/21/horeca/restauracion-organizada/Burger-King-presenta-hambuerguesa-Chicken_1704439570_814340_660x372.jpg",
+        "description": "pechuga de pollo marinada, crujiente por fuera y tierno por dentro,",
         "category": 2,
-        "price": 4.99,
+        "price": 8.99,
         "quantity": 1
     },
     {
         "id": 16,
-        "name": "",
-        "image": "",
-        "description": "",
+        "name": "COSTILLAS DE CERDO",
+        "image": "https://carniceriavictorsalvo.com/wp-content/uploads/2024/04/costillas-de-cerdo-a-la-parrilla-costillas-de-cerdo-iberico-Victor-Salvo-Zaragoza.jpg.webp",
+        "description": "Costillas ahumadas durante 24h",
         "category": 2,
-        "price": 4.99,
+        "price": 14.99,
         "quantity": 1
     },
     {
         "id": 17,
-        "name": "",
-        "image": "",
-        "description": "",
+        "name": "CHUELTON DE BUEY",
+        "image": "https://s1.elespanol.com/2022/01/13/actualidad/642196379_221079449_1706x960.jpg",
+        "description": "Chuleton de buey a la parrilla",
         "category": 2,
-        "price": 4.99,
+        "price": 24.99,
         "quantity": 1
     },
     {
         "id": 18,
-        "name": "",
-        "image": "",
-        "description": "",
+        "name": "TACOS VEGANOS",
+        "image": "https://blogscdn.thehut.net/app/uploads/sites/450/2021/03/Tacos_1616497070.jpg",
+        "description": "Tacos veganos de coliflor con salsa búfalo ",
         "category": 2,
         "price": 4.99,
         "quantity": 1
