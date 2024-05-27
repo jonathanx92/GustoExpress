@@ -91,9 +91,9 @@
     },
     {
         "id": 11,
-        "name": "SUPER PEPPERONI",
-        "image": "https://cdn.new.papajohns.es/pictures/pizzas/pepperoni_imagen_1702998998.webp",
-        "description": "Salsa de tomate natural, doble de pepperoni crujiente y queso 100% mozzarella.",
+        "name": "CARNIVORA",
+        "image": "https://cdn.new.papajohns.es/pictures/pizzas/carnivora_imagen_1702893808.webp",
+        "description": "Salsa de tomate natural, carne de cerdo, carne de vacuno, pepperoni crujiente, york, bacon XL y queso 100% mozzarella.",
         "category": 2,
         "price": 13.99,
         "quantity": 1

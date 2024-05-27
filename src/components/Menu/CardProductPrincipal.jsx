@@ -15,9 +15,9 @@ const CardProductPrincipal = ({ id, name, image, description, price, quantity })
   }
 
   return (
-    <Card type="inner" title={name} id={id} style={{ marginBottom: '2vh', width: '40vh', height:'55vh'}}>
+    <Card type="inner" title={name} id={id} style={{ marginBottom: '2vh', width: '40vh', height:'50vh'}}>
       <div>
-        <img style={{ width : '31vh', height: '31vh', marginBottom:'1vh'}} src={image} alt={name} />
+        <img style={{ width : '33vh', height: '23vh', marginBottom:'1vh'}} src={image} alt={name} />
         <p>{description}</p>
       </div>
       <div style={{ float: "left" }}>
