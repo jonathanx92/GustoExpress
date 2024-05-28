@@ -12,7 +12,7 @@ const ProductListPostre = () => {
       };
     return (
         <div id="postres">
-            <Card title="Postre" style={{ marginBottom: 16, backgroundColor: 'grey', textAlign:'center' }}>
+            <Card title="Postre" style={{ marginBottom: 16, backgroundColor: '#EAEAEA', textAlign:'center' }}>
                 <Row gutter={16}>
                     {ProductItems.filter(product => product.category === 4).map((product) => (
                         <Col span={8} key={product.id}>

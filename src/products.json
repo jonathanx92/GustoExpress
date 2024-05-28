@@ -3,7 +3,7 @@
         "id": "prod_Q8lOr9gloef3l2" ,
         "name": "ALITAS BBQ",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
-        "description": "Alitas de pollo bañadas en nuestra insuperable salsa BBQ original. 8 uds",
+        "description": "Alitas de pollo bañadas en nuestra insuperable salsa BBQ. 8 uds",
         "category": 1,
         "price": 4.99,
         "quantity": 1
@@ -21,13 +21,13 @@
         "id": "prod_Q9VVQzA55nZNDT",
         "name": "BRIE BITES",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/brie_bites_icono_1702973736_medium.webp",
-        "description": "Crujientes triángulos rebozados rellenos de cremoso queso con brie",
+        "description": "Crujientes triángulos rebozados rellenos de cremoso queso",
         "category": 1,
         "price": 4.99,
         "quantity": 1
     },
     {
-        "id": 4,
+        "id": "prod_Q9VWTWb4VSEi2N",
         "name": "PALITOS CON SALSA PARMESANO",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/palitos_1707807892_medium.webp",
         "description": "Palitos de pan bañados en salsa de queso parmesano + salsa. 8 uds",
@@ -36,7 +36,7 @@
         "quantity": 1
     },
     {
-        "id": 5,
+        "id": "prod_Q9VY189oqNJnVa",
         "name": "PATATAS TEJA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/patatas_teja_1707807915_medium.webp",
         "description": "Crujientes patatas teja recién horneadas + salsa",
@@ -45,7 +45,7 @@
         "quantity": 1
     },
     {
-        "id": 6,
+        "id": "prod_Q9VYJz8WQSmDUE",
         "name": "AROS DE CEBOLLA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/aros_de_cebolla_1707808144_medium.webp",
         "description": "Crujientes aros de cebolla fresca rebozados. 10 uds",
@@ -54,16 +54,16 @@
         "quantity": 1
     },
     {
-        "id": 7,
+        "id": "prod_Q9VZ94alD6ViPB",
         "name": "PECHUGUITAS DE POLLO",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/pechuguitas_xxl_1707808131_medium.webp",
-        "description": "Pechuga de pollo empanados y horneados al momento + salsa. 11 uds",
+        "description": "Pechuga de pollo empanados + salsa. 11 uds",
         "category": 1,
         "price": 4.99,
         "quantity": 1
     },
     {
-        "id": 8,
+        "id": "prod_Q9VaYKWJCz94eY",
         "name": "GREEN NUGGETS",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/green_nuggets_1707808192_medium.webp",
         "description": "Crujientes Nuggets de pollo vegano hechos a base de soja. 8 uds",
@@ -72,16 +72,16 @@
         "quantity": 1
     },
     {
-        "id": 9,
+        "id": "prod_Q9VbXHcza221rt",
         "name": "COMBO ENTRANTES",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/combo_1707808086_medium.webp",
-        "description": "Aros de cebolla (x4), Alitas de pollo (x4), Pechuguitas de pollo (X4) + patatas teja",
+        "description": "Aros de cebolla, Alitas de pollo, Pechuguitas de pollo + patatas teja",
         "category": 1,
         "price": 6.99,
         "quantity": 1
     },
     {
-        "id": 10,
+        "id": "prod_QBNPgB1EbaRDW6",
         "name": "BARBACOA",
         "image": "https://cdn.new.papajohns.es/pictures/pizzas/barbacoagrande_1713865416.webp",
         "description": "Salsa BBQ original, carne de cerdo, de pollo a la parrilla, bacon XL y queso 100% mozzarella.",
@@ -90,25 +90,25 @@
         "quantity": 1
     },
     {
-        "id": 11,
+        "id": "prod_QBNTV9rDmnXo8S",
         "name": "CARNIVORA",
         "image": "https://cdn.new.papajohns.es/pictures/pizzas/carnivora_imagen_1702893808.webp",
-        "description": "Salsa de tomate natural, carne de cerdo, carne de vacuno, pepperoni crujiente, york, bacon XL y queso 100% mozzarella.",
+        "description": "Salsa de tomate, carne de cerdo, carne de vacuno, pepperoni, york, bacon XL y queso 100% mozzarella.",
         "category": 2,
         "price": 13.99,
         "quantity": 1
     },
     {
-        "id": 12,
+        "id": "prod_QBNTML2QQza4eL",
         "name": "SEIS QUESOS",
         "image": "https://cdn.new.papajohns.es/pictures/pizzas/6_quesos_imagen_1702893836.webp",
-        "description": "Salsa de tomate natural, mezcla 5 quesos italianos, un toque de especias italianas y queso 100% mozzarella.",
+        "description": "Salsa de tomate, mezcla 5 quesos italianos, un toque de especias italianas y queso 100% mozzarella.",
         "category": 2,
         "price": 13.99,
         "quantity": 1
     },
     {
-        "id": 13,
+        "id": "prod_QBNV9WJwLLOdGP",
         "name": "KEBAB",
         "image": "https://www.gastronosfera.com/sites/default/files/styles/wide/public/toplist/2023/kebap-fast-food-casa.jpg?itok=MKkhvTtB",
         "description": "Pan de pita, cordero, pollo o mixto, lechuga, tomate, cebolla y salsa",
@@ -117,25 +117,25 @@
         "quantity": 1
     },
     {
-        "id": 14,
+        "id": "prod_QBNVlIDzjR6y9p",
         "name": "HAMBURGUESA",
         "image": "https://estaticos-cdn.prensaiberica.es/clip/cc8e43c6-39b0-44c9-8ec5-67a766f2b662_16-9-discover-aspect-ratio_default_0.webp",
-        "description": "Carne Angus, doble de queso Cheddar, doble de bacón, cebolla al grill y salsa Cheat.",
+        "description": "Carne Angus, queso Cheddar,bacón, cebolla al grill y salsa Cheat.",
         "category": 2,
         "price": 11.99,
         "quantity": 1
     },
     {
-        "id": 15,
+        "id": "prod_QBNWeXjpkJRUAK",
         "name": "HAMBURGUESA DE POLLO",
         "image": "https://www.foodretail.es/2022/10/21/horeca/restauracion-organizada/Burger-King-presenta-hambuerguesa-Chicken_1704439570_814340_660x372.jpg",
-        "description": "pechuga de pollo marinada, crujiente por fuera y tierno por dentro,",
+        "description": "pechuga de pollo, crujiente por fuera y tierno por dentro",
         "category": 2,
         "price": 8.99,
         "quantity": 1
     },
     {
-        "id": 16,
+        "id": "prod_QBNXV0rBKvdhNn",
         "name": "COSTILLAS DE CERDO",
         "image": "https://carniceriavictorsalvo.com/wp-content/uploads/2024/04/costillas-de-cerdo-a-la-parrilla-costillas-de-cerdo-iberico-Victor-Salvo-Zaragoza.jpg.webp",
         "description": "Costillas ahumadas durante 24h",
@@ -144,8 +144,8 @@
         "quantity": 1
     },
     {
-        "id": 17,
-        "name": "CHUELTON DE BUEY",
+        "id": "prod_QBNYHg2okvefwV",
+        "name": "CHULETON DE BUEY",
         "image": "https://s1.elespanol.com/2022/01/13/actualidad/642196379_221079449_1706x960.jpg",
         "description": "Chuleton de buey a la parrilla",
         "category": 2,
@@ -153,7 +153,7 @@
         "quantity": 1
     },
     {
-        "id": 18,
+        "id": "prod_QBNZ1w5BWGfUzE",
         "name": "TACOS VEGANOS",
         "image": "https://blogscdn.thehut.net/app/uploads/sites/450/2021/03/Tacos_1616497070.jpg",
         "description": "Tacos veganos de coliflor con salsa búfalo ",
@@ -162,16 +162,16 @@
         "quantity": 1
     },
     {
-        "id": 19,
+        "id": "prod_QBNZFjTctRmH0m",
         "name": "MEGA CHOCO COOKIE",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/mega_choco_cookie_320x320px_1708686069_medium.webp",
-        "description": " Deliciosa cookie rellena de chocolate ",
+        "description": "Cookie rellena de chocolate ",
         "category": 4,
         "price": 3.99,
         "quantity": 1
     },
     {
-        "id": 20,
+        "id": "prod_QBNaYK5F79EMLt",
         "name": "ROLLS DE CANELA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/papa_rolls_canela_320x320px_1708685759_medium.webp",
         "description": "Papa Rolls de Canela",
@@ -180,25 +180,25 @@
         "quantity": 1
     },
     {
-        "id": 21,
+        "id": "prod_QBNb8fxA3ZeWnP",
         "name": "CORNETO NOCILLA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/magnun_almendrado_320x320px_1708686001_medium.webp",
         "description": "Cornetto Nocilla",
         "category": 4,
-        "price": 2.00,
+        "price": 1.99,
         "quantity": 1
     },
     {
-        "id": 22,
+        "id": "prod_QBNb2sRYHY56h1",
         "name": "MAGUM ALMENDRA",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/magnum_almendrado_320x320_feb24_1709022666_medium.webp",
-        "description": "Helado de vainilla con crujiente capa de chocolate y trocitos de almendras.",
+        "description": "Helado de vainilla, chocolate y trocitos de almendras.",
         "category": 4,
-        "price": 2.00,
+        "price": 1.99,
         "quantity": 1
     },
     {
-        "id": 23,
+        "id": "prod_QBNcwS93eWUSWp",
         "name": "MAGNUM WHITE",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/magnun_white_320x320px_1708685811_medium.webp",
         "description": "Helado de vainilla cubierto con una capa de chocolate blanco.",
@@ -207,7 +207,7 @@
         "quantity": 1
     },
     {
-        "id": 24,
+        "id": "prod_QBNdbDeDxykTXZ",
         "name": "CHUNKY MONKEY 500ml",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_cookie_dough_465_320x320px_1708685783_medium.webp",
         "description": "Helado de plátano con trozos chocolateados y nueces. ",
@@ -216,7 +216,7 @@
         "quantity": 1
     },
     {
-        "id": 25,
+        "id": "prod_QBNeclVRZkXNXo",
         "name": "CHOCO FUDGE BROWNIE 500ml",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_choco_fudge_465_320x320px_1708685770_medium.webp",
         "description": "Helado de chocoalte con bizcocho de chocolate.",
@@ -225,7 +225,7 @@
         "quantity": 1
     },
     {
-        "id": 26,
+        "id": "prod_QBNeTHbPnbnUSF",
         "name": "COOKIE DOUGH 500ml",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_cookie_dough_465_320x320px_1708685725_medium.webp",
         "description": "Helado de vainilla con cookies y trocitos de chocolate. ",
@@ -234,70 +234,69 @@
         "quantity": 1
     },
     {
-        "id": 27,
+        "id": "prod_QBNfnxqwyjPhwJ",
         "name": "HELADO VEGANO 465ml",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/byj_vegano_465_byj_320x320px_1708685956_medium.webp",
-        "description": "Helado vegetal de caramelo con trozos de galletas y pepitas de chocolate",
+        "description": "Helado vegetal de caramelo, trozos de galletas y pepitas de chocolate",
         "category": 4,
         "price": 4.99,
         "quantity": 1
     },
     {
-        "id": 28,
+        "id": "prod_QBNgPYJlHQOTLu",
         "name": "Coca Cola 500ml",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/cocacola_320x320px_1708685454_medium.webp",
-        "description": "La de siempre, original y deliciosa bebida refrescante de 500ml",
+        "description": "La de siempre, original y deliciosa ",
         "category": 3,
         "price": 2.29,
         "quantity": 1
     },
     {
-        "id": 29,
+        "id": "prod_QBNglHamTRi0jP",
         "name": "Coca Cola Zero 500ml",
-        "description": "Bebida refrescante sin azúcares, ni calorias de 500ml",
+        "description": "Bebida refrescante Zero",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/cocacola_zero_320x320px_1708685473_medium.webp ",
         "category": 3,
         "price": 2.99,
         "quantity": 1
     },{
-        "id": 30,
+        "id": "prod_QBNh7w5QBaEqRm",
         "name": "Fanta de Naranja 500ml",
-        "description": "Bebida refrescante con zumos de frutas de 500ml",
+        "description": "Bebida refrescante ",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/fanta_naranja_320x320px_1708685590_medium.webp",
         "category": 3,
         "price": 2.29,
         "quantity": 1
     },
     {
-        "id": 31,
-        "name": "Aquabona Agua Mineral",
-        "description": "Botella de agua",
-        "image": "https://cdn.new.papajohns.es/thumbnails/complements/aquabona_320x320px_1708685711_medium.webp",
+        "id": "prod_QBNi2bQMmCFRnJ",
+        "name": "Heineken",
+        "description": "Cerveza Heineken",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/heineken_320x320px_1708685676_medium.webp",
         "category": 3,
-        "price": 1.59,
+        "price": 1.99,
         "quantity": 1
     },
-    
     {
-        "id": 32,
+        "id": "prod_QBNiFdITZsE3fZ",
         "name": "Aquarius Limon",
-        "description": "Botella de Aquarious Limon de 500ml",
+        "description": "Botella de Aquarious Limon ",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/aquarius_limon_320x320px_1708685615_medium.webp",
         "category": 3,
         "price": 2.29,
         "quantity": 1
     },
     {
-        "id": 33,
+        "id": "prod_QBNjKEymPMsOnq",
         "name": "Aquarius Naranja ",
-        "description": "Botella de Aquarious Naranja 500ml",
+        "description": "Botella de Aquarious Naranja",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/aquarius_naranja_320x320px_1708685628_medium.webp",
         "category": 3,
         "price": 4.99,
         "quantity": 1
     },
     {
-        "id": 34,
+        "id": "prod_QBNjMbLSI0ibvI",
         "name": "Nestea Limón",
         "description": "Botella de Té Negro de Limón",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/nestea_320x320px_1708685647_medium.webp",
@@ -306,7 +305,7 @@
         "quantity": 1
     },
     {
-        "id": 35,
+        "id": "prod_QBNkRbB2Cg8Cjg",
         "name": "Monster",
         "description": "Bebida energética sabor dulce ",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/monster_320x320px_1708685970_medium.webp",
@@ -315,12 +314,13 @@
         "quantity": 1
     },
     {
-        "id": 36,
-        "name": "Heineken",
-        "description": "Cerveza Heineken (5% Vol de alcohol)",
-        "image": "https://cdn.new.papajohns.es/thumbnails/complements/heineken_320x320px_1708685676_medium.webp",
+        "id": "prod_QBNlmu5c5XG9If",
+        "name": "Aquabona Agua Mineral",
+        "description": "Botella de agua",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/aquabona_320x320px_1708685711_medium.webp",
         "category": 3,
-        "price": 1.99,
+        "price": 1.59,
         "quantity": 1
     }
+    
 ]

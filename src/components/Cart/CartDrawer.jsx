@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Drawer, List, Avatar } from 'antd';
 import { ShoppingCartOutlined, LoadingOutlined, MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { useCart } from '../Context/CartContext';
 import { useLocation, useNavigate } from "react-router-dom"; 
+import { AuthContext } from '../Context/AuthContext'; 
 import './CartDrawer.css';
 
 const CartDrawer = () => {
     const { cart, dispatch } = useCart();
+    const { user } = useContext(AuthContext); 
     const [visible, setVisible] = React.useState(false);
     const location = useLocation();
     const navigate = useNavigate(); 
-    const allowedRoutes = ['/home', '/', '/entrantes', '/principal', '/postres', '/bebidas', '/'];
+    const allowedRoutes = ['/home', '/', '/entrantes', '/principal', '/postres', '/bebidas'];
 
     const showDrawer = () => {
         setVisible(true);
@@ -41,7 +43,12 @@ const CartDrawer = () => {
     };
 
     const continueShopping = () => {
-        navigate('/pago'); 
+        if (user) {
+            navigate('/pago'); 
+        } else {
+            alert("Debes entrar o registrate antes de continuar con el pago");
+            navigate('/login'); 
+        }
     };
 
     const isAllowedRoute = allowedRoutes.includes(location.pathname);
@@ -57,7 +64,7 @@ const CartDrawer = () => {
                 </div>
             )}
             <Drawer
-                title="Carrito de Compra"
+                title="CARRITO DE COMPRA"
                 placement="right"
                 closable={false}
                 onClose={onClose}
@@ -91,7 +98,7 @@ const CartDrawer = () => {
                 {cart.length > 0 && (
                     <div className="payment-button-container">
                         <Button className="payment-button" onClick={continueShopping}>
-                            Continuar con la compra {getTotalPrice()}€
+                            Continuar el pago {getTotalPrice()}€
                         </Button>
                     </div>
                 )}

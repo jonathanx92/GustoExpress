@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Button } from 'antd';
-import { AddToCartIcon } from '../Cart/Icons';
 import { useCart } from '../Context/CartContext';
 
 const CardProductPostre = ({id, name, image,description, price, quantity}) => {
@@ -15,7 +14,7 @@ const CardProductPostre = ({id, name, image,description, price, quantity}) => {
   }
 
 return(
-  <Card type='inner' title={name} id={id} style={{marginBottom: '2vh', width: '40vh', height:'55vh'}}>
+  <Card type='inner' title={name} id={id} style={{marginBottom: '2vh', width: '40vh', height:'57vh'}}>
     <div>
       <img style={{width : '31vh', height: '31vh', marginBottom:'1vh'}} src={image} alt={name}/>
       <p>{description}</p>
@@ -24,7 +23,7 @@ return(
       {price} €
     </div>
     <div style={{float:'right'}}>
-      <Button onClick={handleAddToCart}><AddToCartIcon/></Button>
+      <Button style={{ backgroundColor:'#007bff', color:'#FFFFFF'}} onClick={handleAddToCart}>Añadir al carrito </Button>
     </div>
   </Card>
 );
@@ -32,7 +31,7 @@ return(
 
 
 CardProductPostre.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

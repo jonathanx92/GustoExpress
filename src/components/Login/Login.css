@@ -40,8 +40,8 @@
     border-radius: 30px;
     padding: 8px;
     border-width: 0px;
-    color: white;
     font-size: 14px;
+    background-color:rgba(172, 255, 47, 0.581);
 }
 .style-profile{
     border-radius: 50%;

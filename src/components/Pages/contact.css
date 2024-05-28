@@ -1,0 +1,37 @@
+.form-container {
+  margin-right: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Altura completa de la ventana */
+}
+
+form {
+  border-radius: 8px;
+  max-width: 700px; 
+}
+
+h1{
+  text-align: center;
+}
+  
+  .ant-form-item-label > label {
+    color: #2C3E50;
+    font-weight: bold;
+  }
+  
+  .ant-input, .ant-input-textarea {
+    border-radius: 4px;
+  }
+  
+  .btn-form-cont {
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+    border-radius: 4px;
+  }
+  
+  .btn-form-cont{
+    background-color: #16A085;
+    border-color: #16A085;
+  }
+  

@@ -8,7 +8,7 @@ const { Content } = Layout;
 
 const AppLayout = ({ children }) =>{
   return (
-    <Layout style={{ minHeight: '100vh' }}>
+    <Layout style={{ minHeight: '100vh', backgroundColor:'#FFFFFD'}}>
       <AppHeader/>
       <Content>
       {children}

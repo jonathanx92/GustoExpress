@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Layout, Button } from 'antd';
+import { Link, useNavigate } from 'react-router-dom'; // Importa Link y useNavigate desde react-router-dom
 import logo from './gustoexpress.jpeg';
 import '../../App.css';
 import CartDrawer from '../Cart/CartDrawer';
@@ -13,12 +14,14 @@ const { Header } = Layout;
 const AppHeader = () => {
   const { user } = useContext(AuthContext);
   const { dispatch } = useCart();
+  const navigate = useNavigate(); // Usa el hook useNavigate
 
   const handleSignOut = async () => {
     try {
       const auth = getAuth(FirebaseApp); 
       await signOut(auth);
       dispatch({ type: 'CLEAR_CART' });
+      navigate('/'); // Redirige a la página de inicio
     } catch (error) {
       console.error('Error al cerrar sesión:', error);
     }
@@ -27,9 +30,9 @@ const AppHeader = () => {
   return (
     <Header className='custom-header'>
       <div>
-        <a href="/home">
-          <img src={logo} alt="logo" style={{borderRadius:"2vh", marginLeft:'3vh' }}/>
-        </a>
+        <Link to="/home">
+          <img src={logo} alt="logo" style={{borderRadius:"2vh", marginLeft:'3vh', height:'7vh', width:'7vh' }}/>
+        </Link>
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', width: '100%' }}>
@@ -41,7 +44,7 @@ const AppHeader = () => {
             <Button type="primary" onClick={handleSignOut}>Salir</Button>
           </div>
         ) : (
-          <a href="./login">Login</a>
+          <Link to="/login" style={{fontSize:'20px'}}>Login</Link>
         )}
         <div style={{ fontSize: '24px', marginLeft: '20px' }}>
           <CartDrawer/>

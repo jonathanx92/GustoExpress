@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AddToCartIcon } from '../Cart/Icons';
 import { Card, Button } from 'antd';
 import { useCart } from '../Context/CartContext';
 
@@ -22,14 +21,14 @@ return(
   </div>
   <div style={{float:'left'}}>{price} €</div>
   <div style={{float:'right'}}>
-    <Button onClick={handleAddToCart}><AddToCartIcon/></Button>
+    <Button style={{ backgroundColor:'#007bff', color:'#FFFFFF'}} onClick={handleAddToCart}>Añadir al carrito</Button>
   </div>
   </Card>
 );
 };
 
 CardProductBebida.propTypes = {
-  id:PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

@@ -1,10 +1,10 @@
 import React from "react";
 function Cancel() {
     return (
-      <div>
-        <h1 className="mt-3">Purchase cancelled!</h1>
+      <div style={{textAlign:'center', marginTop:'10vh'}}>
+        <h1 className="mt-3">Compra cancelada</h1>
         <a href="/" className="btn btn-danger mt-2">
-          Back to home
+          Volver a la pagina principal
         </a>
       </div>
     );

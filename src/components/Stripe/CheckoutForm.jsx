@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { PaymentElement, useStripe, useElements, LinkAuthenticationElement } from '@stripe/react-stripe-js';
 import { useNavigate } from 'react-router-dom';
+import { useCart } from '../Context/CartContext'; 
 import './FormCheckout.css';
 
 const CheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
     const navigate = useNavigate();
+    const { dispatch } = useCart(); 
     const [isLoading, setIsLoading] = useState(false);
     const [message, setMessage] = useState('');
 
@@ -23,16 +25,17 @@ const CheckoutForm = () => {
         const { error } = await stripe.confirmPayment({
             elements,
             confirmParams: {
-                // Return URL where Stripe will redirect the user after payment is successful
+                
                 return_url: 'http://localhost:3000/success',
             },
         });
 
         if (error) {
             setMessage(error.message);
-            navigate('/cancel'); // Redirige a /cancel en caso de error
+            navigate('/cancel'); 
         } else {
             setMessage('Payment successful!');
+            dispatch({ type: 'CLEAR_CART' }); 
         }
 
         setIsLoading(false);
@@ -55,7 +58,6 @@ const CheckoutForm = () => {
                     {isLoading ? <div className="spinner" id="spinner"></div> : "PAGAR"}
                 </span>
             </button>
-            {/* Show any error or success messages */}
             {message && <div id="payment-message">{message}</div>}
         </form>
     )

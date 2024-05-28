@@ -1,14 +1,16 @@
+*{
+  font-family: 'Poetsen One';
+}
 .main-home{
   max-width: 132vh;
   height: auto;
   margin: auto;
-  padding: 0;
 }
 .custom-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff; 
+  background-color: #FFDAB9; 
   padding: 0 20px;
 }
 .logo{
@@ -18,7 +20,7 @@
 
 .custom-footer{
   text-align: center;
-  background-color: rgb(177, 202, 203);
+  background-color: #FFDAB9   ;
   color:white ;
 }
 
