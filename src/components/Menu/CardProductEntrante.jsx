@@ -15,16 +15,16 @@ const CardProductEntrante = ({ id, name, image, description, price, quantity }) 
 }
 
 return (
-  <Card type="inner" title={name} id={id} style={{ marginBottom: '2vh', width: '40vh', height:'57vh', backgroundColor:'#FFFFFF', fontFamily:'Poetsen One' }}>
+  <Card type="inner" title={name} id={id} style={{ marginBottom: '2vh', width: '40vh', height:'57vh', backgroundColor:'#FFFFFF', fontFamily:'Poetsen One', position:'relative' }}>
     <div>
-      <img style={{width : '31vh', height: '31vh', marginBottom:'1vh'}} src={image} alt={name} />
-      <p > {description}</p>
+      <img style={{width : '31vh', height: '31vh', marginBottom:'1vh', maxWidth:'31vh', maxHeight:'31vh'}} src={image} alt={name} />
+      <p style={{ fontSize:'0.80rem'}}> {description}</p>
     </div>
-    <div style={{float: "left"}}>
+    <div style={{float: "left", fontSize:'1rem'}}>
       {price}€
     </div>
     <div style={{float: "right"}}>
-      <Button style={{ backgroundColor:'#007bff', color:'#FFFFFF'}} onClick={handleAddToCart}>Añadir al carrito</Button>
+      <Button style={{ backgroundColor:'#007bff', color:'#FFFFFF', maxWidth:'20vh'}} onClick={handleAddToCart}>Añadir al carrito</Button>
     </div>
   </Card>
 );

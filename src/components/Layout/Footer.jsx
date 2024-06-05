@@ -25,7 +25,7 @@ const AppFooter = () => {
         <a href='./contacto'>Contactanos</a>
         </div>
       </div>
-      <p>JonathanDesing©{new Date().getFullYear()} Todos los derechos reservados.</p>
+      <p>J.Desing©{new Date().getFullYear()} Todos los derechos reservados.</p>
 
     </Footer>
   );

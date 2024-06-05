@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import ImagenProfile from './gustoexpress2.jpeg';
 import FirebaseApp from '../Firebase/FirebaseConfig';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { getFirestore, doc, setDoc } from 'firebase/firestore';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
 
 const auth = getAuth(FirebaseApp);
+const firestore = getFirestore(FirebaseApp);
 
 const LoginSignupForm = () => {
     const navigate = useNavigate();
@@ -17,10 +19,23 @@ const LoginSignupForm = () => {
         const formData = new FormData(e.target);
         const email = formData.get('email');
         const password = formData.get('password');
+        const nombre = formData.get('nombre');
+        const apellido = formData.get('apellido');
+        const direccion = formData.get('direccion');
 
         if (registrando) {
             try {
-                await createUserWithEmailAndPassword(auth, email, password);
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+
+                // Almacenar información adicional en Firestore
+                await setDoc(doc(firestore, "users", user.uid), {
+                    nombre,
+                    apellido,
+                    direccion,
+                    email
+                });
+
                 console.log("Usuario creado con éxito");
                 navigate('/home'); 
             } catch (error) {
@@ -45,6 +60,13 @@ const LoginSignupForm = () => {
             <div className="card card-body shadow-lg">
                 <img src={ImagenProfile} alt="" className="style-profile" />
                 <form onSubmit={functAuthenticaction}>
+                    {registrando && (
+                        <>
+                            <input type="text" name="nombre" className="cajatexto" placeholder="Ingrese Nombre" />
+                            <input type="text" name="apellido" className="cajatexto" placeholder="Ingrese Apellido" />
+                            <input type="text" name="direccion" className="cajatexto" placeholder="Ingrese Dirección" />
+                        </>
+                    )}
                     <input type="text" name="email" className="cajatexto" placeholder="Ingrese Email" />
                     <input type="password" name="password" className="cajatexto" placeholder="Ingrese Contraseña" />
                     <button className="btnform">{registrando ? 'Regístrate' : 'Iniciar Sesión'}</button>

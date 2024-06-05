@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Layout, Button } from 'antd';
-import { Link, useNavigate } from 'react-router-dom'; // Importa Link y useNavigate desde react-router-dom
+import { Link, useNavigate } from 'react-router-dom'; 
 import logo from './gustoexpress.jpeg';
 import '../../App.css';
 import CartDrawer from '../Cart/CartDrawer';
@@ -14,14 +14,14 @@ const { Header } = Layout;
 const AppHeader = () => {
   const { user } = useContext(AuthContext);
   const { dispatch } = useCart();
-  const navigate = useNavigate(); // Usa el hook useNavigate
+  const navigate = useNavigate(); 
 
   const handleSignOut = async () => {
     try {
       const auth = getAuth(FirebaseApp); 
       await signOut(auth);
       dispatch({ type: 'CLEAR_CART' });
-      navigate('/'); // Redirige a la página de inicio
+      navigate('/'); 
     } catch (error) {
       console.error('Error al cerrar sesión:', error);
     }
