@@ -11,7 +11,7 @@ export default function AppStripe() {
     const { cart } = useCart(); 
 
     useEffect(() => {
-        fetch('http://localhost:4242/create-payment-intent', {
+        fetch('https://europe-southwest1-clean-result-424717-b2.cloudfunctions.net/stripepayment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
