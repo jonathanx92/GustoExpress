@@ -3,9 +3,9 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import CheckoutForm from './CheckoutForm';
 import { useCart } from '../Context/CartContext'; 
-import config from "../../config";
 
-const stripePromise = loadStripe(config.stripePublic);
+// eslint-disable-next-line no-undef
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC);
 
 export default function AppStripe() {
     const [clientSecret, setClientSecret] = useState('');
