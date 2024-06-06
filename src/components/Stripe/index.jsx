@@ -17,9 +17,14 @@ export default function AppStripe() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ items: cart }), // Envía el carrito al backend
+            body: JSON.stringify({ items: cart }), 
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => setClientSecret(data.clientSecret))
         .catch(error => console.error('Error fetching client secret:', error));
     }, [cart]); 
