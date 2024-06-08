@@ -22,8 +22,10 @@ const AppFooter = () => {
             </div>
         </div>
         <div className='footer-section'>
-        <a href='./contacto'>Contactanos</a>
+        <a href='./contacto'>Contactanos</a><br /><br />
+        <a href='https://billing.stripe.com/p/login/test_14keUYgZufkT5NKeUU'>Acceso Portal Clientes</a>
         </div>
+        
       </div>
       <p>J.Desing©{new Date().getFullYear()} Todos los derechos reservados.</p>
 
