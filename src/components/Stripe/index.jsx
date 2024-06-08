@@ -12,22 +12,31 @@ export default function AppStripe() {
     const { cart } = useCart(); 
 
     useEffect(() => {
-        fetch('https://europe-southwest1-clean-result-424717-b2.cloudfunctions.net/stripepayment', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ items: cart }), 
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+        const fetchPaymentIntent = async () => {
+            console.log('Fetching payment intent with cart:', cart);
+            try {
+                const response = await fetch('https://europe-southwest1-clean-result-424717-b2.cloudfunctions.net/stripepayment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ items: cart }), 
+                });
+                console.log('Response status:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log('Received client secret:', data.clientSecret);
+                setClientSecret(data.clientSecret);
+            } catch (error) {
+                console.error('Error fetching client secret:', error);
             }
-            return response.json();
-        })
-        .then(data => setClientSecret(data.clientSecret))
-        .catch(error => console.error('Error fetching client secret:', error));
+        };
+
+        fetchPaymentIntent();
     }, [cart]); 
+
     const options = {
         clientSecret,
     };
