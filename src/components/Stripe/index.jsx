@@ -15,7 +15,7 @@ export default function AppStripe() {
         const fetchPaymentIntent = async () => {
             console.log('Fetching payment intent with cart:', cart);
             try {
-                const response = await fetch('https://europe-southwest1-clean-result-424717-b2.cloudfunctions.net/stripepayment', {
+                const response = await fetch('https://europe-southwest1-clean-result-424717-b2.cloudfunctions.net/function-1/create-payment-intent', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
