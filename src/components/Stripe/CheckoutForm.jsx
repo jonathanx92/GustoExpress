@@ -26,7 +26,7 @@ const CheckoutForm = () => {
             elements,
             confirmParams: {
                 
-                return_url: 'http://localhost:3000/success',
+                return_url: '/success',
             },
         });
 

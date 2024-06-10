@@ -13,7 +13,6 @@ export default function AppStripe() {
 
     useEffect(() => {
         const fetchPaymentIntent = async () => {
-            console.log('Fetching payment intent with cart:', cart);
             try {
                 const response = await fetch('https://europe-southwest1-clean-result-424717-b2.cloudfunctions.net/function-1/create-payment-intent', {
                     method: 'POST',
@@ -22,12 +21,10 @@ export default function AppStripe() {
                     },
                     body: JSON.stringify({ items: cart }), 
                 });
-                console.log('Response status:', response.status);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const data = await response.json();
-                console.log('Received client secret:', data.clientSecret);
                 setClientSecret(data.clientSecret);
             } catch (error) {
                 console.error('Error fetching client secret:', error);
