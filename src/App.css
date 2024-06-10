@@ -30,14 +30,6 @@ img{
   height: 8vh;
 }
 
-.barrabusqueda{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
 
 /* AppFooter.css */
 .footer-content {

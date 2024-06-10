@@ -6,14 +6,15 @@
 }
 
 .cart-button {
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
+    font-size: 30px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20vh;
+    margin-right: 20%; 
+    transition: margin-right 0.5s; 
 }
 
 .cart-count {
@@ -29,6 +30,13 @@
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cart-button {
+        margin-right: 10%; 
+    }
 }
 
 

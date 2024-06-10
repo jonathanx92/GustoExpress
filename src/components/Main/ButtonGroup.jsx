@@ -12,8 +12,8 @@ const getActiveColors = (colors) =>
   colors.map((color) => new TinyColor(color).darken(5).toString());
 
 const ButtonGroup = () => (
-  <div style={{ textAlign: 'center', marginTop:'2vh', marginBottom:'2vh'}}>
-    <Space size="middle">
+  <div style={{ textAlign: 'center', marginTop:'2rem', marginBottom:'2rem'}}>
+    <Space size="middle" style={{ flexWrap: 'wrap', justifyContent: 'center' }}>
       <ConfigProvider
         theme={{
           components: {
@@ -26,7 +26,7 @@ const ButtonGroup = () => (
           },
         }}
       >
-        <Button type="primary" size="large" style={{ width: '20vh' }}>
+        <Button type="primary" size="large" style={{ minWidth: '8rem', flex: '1 1 20%' }}>
         <a href="#entrante">Entrantes</a>
         </Button>
       </ConfigProvider>
@@ -43,7 +43,7 @@ const ButtonGroup = () => (
           },
         }}
       >
-        <Button type="primary" size="large" style={{ width: '20vh' }}>
+        <Button type="primary" size="large" style={{ minWidth: '8rem', flex: '1 1 20%' }}>
         <a href="#principal">Principales</a>
         </Button>
       </ConfigProvider>
@@ -60,7 +60,7 @@ const ButtonGroup = () => (
           },
         }}
       >
-        <Button type="primary" size="large" style={{ width: '20vh' }} >
+        <Button type="primary" size="large" style={{ minWidth: '8rem', flex: '1 1 20%' }} >
         <a href="#bebida">Bebidas</a>
         </Button>
       </ConfigProvider>
@@ -77,7 +77,7 @@ const ButtonGroup = () => (
           },
         }}
       >
-        <Button type="primary" size="large" style={{ width: '21vh' }}>
+        <Button type="primary" size="large" style={{ minWidth: '8rem', flex: '1 1 20%' }}>
         <a href="#postres">Postres</a>
         </Button>
       </ConfigProvider>

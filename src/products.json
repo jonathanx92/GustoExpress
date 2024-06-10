@@ -2,7 +2,7 @@
     {
         "id": "prod_Q8lOr9gloef3l2" ,
         "name": "ALITAS BBQ",
-        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_1710246207_medium.webp",
+        "image": "https://cdn.new.papajohns.es/thumbnails/complements/entrantes_320x320px_alitas_bbq_copia_1717506446_medium.webp",
         "description": "Alitas de pollo bañadas en nuestra insuperable salsa BBQ. 8 uds",
         "category": 1,
         "price": 4.99,
@@ -21,7 +21,7 @@
         "id": "prod_Q9VVQzA55nZNDT",
         "name": "BRIE BITES",
         "image": "https://cdn.new.papajohns.es/thumbnails/complements/brie_bites_icono_1702973736_medium.webp",
-        "description": "Crujientes triángulos rebozados rellenos de cremoso queso",
+        "description": "Crujientes triángulos de pollo rebozados rellenos de  queso",
         "category": 1,
         "price": 4.99,
         "quantity": 1
@@ -83,7 +83,7 @@
     {
         "id": "prod_QBNPgB1EbaRDW6",
         "name": "BARBACOA",
-        "image": "https://cdn.new.papajohns.es/pictures/pizzas/barbacoagrande_1713865416.webp",
+        "image": "https://cdn.new.papajohns.es/pictures/pizzas/base_45_grados_grandes_11542x664_copia_1717505801.webp",
         "description": "Salsa BBQ original, carne de cerdo, de pollo a la parrilla, bacon XL y queso 100% mozzarella.",
         "category": 2,
         "price": 13.99,
