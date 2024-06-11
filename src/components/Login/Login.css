@@ -5,6 +5,8 @@
     height: 70vh;
     width: 60vh;
     margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .cajatexto{
     background-color: #cccccc40;
@@ -50,4 +52,32 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .cajatexto, .btnform {
+        font-size: 14px;
+    }
+
+    .btnform {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+    }
+
+    .cajatexto, .btnform {
+        font-size: 12px;
+    }
+
+    .btnform {
+        padding: 6px;
+    }
 }

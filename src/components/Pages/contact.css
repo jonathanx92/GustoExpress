@@ -1,37 +1,64 @@
 .form-container {
-  margin-right: 25vh;
+  margin: 0 auto;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Altura completa de la ventana */
+  height: auto; 
 }
 
 form {
   border-radius: 8px;
   max-width: 700px; 
+  width: 100%; 
+  padding: 20px;
 }
 
-h1{
+h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
+
+.ant-form-item-label > label {
+  color: #2C3E50;
+  font-weight: bold;
+}
+
+.ant-input, .ant-input-textarea {
+  border-radius: 4px;
   
+}
+
+.btn-form-cont {
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.btn-form-cont:hover {
+  background-color: #16A085;
+  border-color: #16A085;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin-right: 0;
+    padding: 10px;
+    height: auto;
+  }
+
+  form {
+    padding: 10px;
+  }
+
   .ant-form-item-label > label {
-    color: #2C3E50;
-    font-weight: bold;
+    font-size: 14px;
   }
-  
-  .ant-input, .ant-input-textarea {
-    border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+  .ant-form-item-label > label {
+    font-size: 12px;
   }
-  
-  .btn-form-cont {
-    background-color: #1ABC9C;
-    border-color: #1ABC9C;
-    border-radius: 4px;
-  }
-  
-  .btn-form-cont{
-    background-color: #16A085;
-    border-color: #16A085;
-  }
-  
+}

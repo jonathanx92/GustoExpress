@@ -25,17 +25,15 @@ const FormContact = () => {
     const subject = issue || 'Sin asunto';
     const body = `Nombre: ${name} ${surnames}\nCorreo: ${email}\nMensaje: ${userMessage}`;
 
-
     const mailtoLink = `mailto:support@gustoexpress.es?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
 
-    
     message.success('Correo enviado correctamente');
     form.resetFields();
     setTimeout(() => {
       navigate('/home');
-    }, 2000); 
+    }, 2000);
   };
 
   return (
@@ -46,7 +44,7 @@ const FormContact = () => {
         name="contact-messages"
         onFinish={onFinish}
         validateMessages={validateMessages}
-        style={{ width: '100%' }} 
+        style={{ width: '100%' }}
       >
         <h1>Adelante, cuéntanos lo que necesites!</h1>
         <Form.Item
@@ -78,11 +76,11 @@ const FormContact = () => {
         >
           <Input />
         </Form.Item>
-        
+
         <Form.Item name={['user', 'issue']} label="Asunto">
           <Input />
         </Form.Item>
-        
+
         <Form.Item name={['user', 'message']} label="Mensaje">
           <Input.TextArea />
         </Form.Item>

@@ -1,35 +1,48 @@
-*{
+* {
   font-family: 'Poetsen One';
-
 }
-.main-home{
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.main-home {
   max-width: 132vh;
   height: auto;
   margin: auto;
 }
+
 .custom-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #FFDAB9; 
   padding: 0 20px;
-}
-.logo{
-  width: 120px;
-  height: 31px;
+  width: 100%;
 }
 
-.custom-footer{
+.logo {
+  height: 7vh;
+  width: 7vh;
+  border-radius: 2vh;
+}
+
+.custom-footer {
   text-align: center;
-  background-color: #FFDAB9   ;
-  color:white ;
+  background-color: #FFDAB9;
+  color: white;
+  padding: 20px;
+  width: 100%;
 }
 
-img{ 
-  width: 9vh;
-  height: 8vh;
+img {
+  width: 100%;
+  height: 100%;
 }
-
 
 /* AppFooter.css */
 .footer-content {
@@ -51,7 +64,6 @@ img{
   margin-left: 10px;
 }
 
-
 .legal-notice-container {
   display: flex;
   justify-content: center;
@@ -65,4 +77,40 @@ img{
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .custom-header, .custom-footer {
+    padding: 0 10px;
+  }
+
+  .logo {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 4vh;
+    width: 4vh;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
 }

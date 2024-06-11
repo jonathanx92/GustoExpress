@@ -29,12 +29,9 @@ const AppHeader = () => {
 
   return (
     <Header className='custom-header'>
-      <div>
-        <Link to="/home">
-          <img src={logo} alt="logo" style={{borderRadius:"2vh", marginLeft:'3vh', height:'7vh', width:'7vh' }}/>
-        </Link>
-      </div>
-
+      <Link to="/home">
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
       <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', width: '100%' }}>
         {user ? (
           <div style={{ display: 'flex', alignItems: 'center', marginRight: '20px' }}>
