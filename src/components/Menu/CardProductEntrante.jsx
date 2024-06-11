@@ -4,7 +4,7 @@ import { Card, Button } from 'antd';
 import { useCart } from '../Context/CartContext.jsx';
 import './menu_products.css';
 
-const CardProductEntrante = ({ id, name, image, description, price, quantity, onAddToCart }) => {
+const CardProductEntrante = ({ id, name, image, description, price, quantity }) => {
   const { dispatch } = useCart();
 
   const handleAddToCart = () => {
@@ -12,7 +12,6 @@ const CardProductEntrante = ({ id, name, image, description, price, quantity, on
       type: 'ADD_TO_CART',
       payload: { id, name, image, description, price, quantity }
     });
-    onAddToCart({ id, name, image, description, price, quantity });
   };
 
   return (
@@ -46,8 +45,7 @@ CardProductEntrante.propTypes = {
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  quantity: PropTypes.number,
-  onAddToCart: PropTypes.func.isRequired
+  quantity: PropTypes.number
 };
 
 export default CardProductEntrante;
