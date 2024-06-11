@@ -10,7 +10,7 @@ const CheckoutForm = () => {
     const navigate = useNavigate();
     const { dispatch } = useCart(); 
     const [isLoading, setIsLoading] = useState(false);
-    const [message, setMessage] = useState('');
+    const [message] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -31,10 +31,10 @@ const CheckoutForm = () => {
         });
 
         if (error) {
-            setMessage(error.message);
+            alert(error.message);
             navigate('/cancel'); 
         } else {
-            setMessage('Payment successful!');
+            alert('Pagado correctamente!');
             dispatch({ type: 'CLEAR_CART' }); 
         }
 

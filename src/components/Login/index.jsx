@@ -36,7 +36,7 @@ const LoginSignupForm = () => {
                     email
                 });
 
-                console.log("Usuario creado con éxito");
+                alert("Usuario creado con éxito");
                 navigate('/home'); 
             } catch (error) {
                 console.error("Error al crear el usuario:", error.message);
